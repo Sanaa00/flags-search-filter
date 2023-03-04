@@ -22,12 +22,12 @@ function HomeCard() {
     <>
       <SearchHome fetchData={fetchData} setFilteredData={setFilteredData} />
       <FilterCardHome fetchData={fetchData} setFilteredData={setFilteredData} />
-      <div className="grid  gap-10 grid-cols-3 justify-between items-center my-10">
+      <div className="grid  gap-10 grid-cols-3 justify-between items-center my-10 ">
         {filteredData?.map((data) => {
           return (
             <div
               key={data.name.common}
-              className="w-full shadow-lg hover:shadow-2xl  rounded-lg"
+              className="w-full shadow-lg hover:shadow-2xl  rounded-lg hover:-translate-y-3 hover:duration-300"
             >
               <img
                 className="w-full h-48 object-cover  rounded-lg"
